@@ -1,0 +1,51 @@
+<html>
+<head>
+ 
+  <title>Vorlesungsplayer</title>
+  
+  
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous"
+/>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+	
+	
+
+</head>
+<body>
+    <!-- <div class="top-bar">
+        <button class="btn" id="prev-page">
+          <i class="fas fa-arrow-circle-left"></i> Prev Page
+        </button>
+        <button class="btn" id="next-page">
+          Next Page <i class="fas fa-arrow-circle-right"></i>
+        </button>
+        <span class="page-info">
+          Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+      </div> -->
+      <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+     
+      <div id="video_box">
+        <div id="overlay">
+            <canvas id="pdf-render"></canvas>
+        </div> 
+      
+      <div id="video_container">
+        	<video id='player'  class="video-js" data-setup='{ "width":1280, "height":720}'>
+            	<source id='mp4' src="IWG7.mp4" type='video/mp4'>
+                    <track label="folienwechsel" kind="metadata" srclang="en" src='./tracks/folienwechsel.vtt' default />
+            	<p>HTML5 Video is not supported by this browser.</p>
+            </video>
+            
+            
+        </div>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

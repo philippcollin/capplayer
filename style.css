@@ -1,0 +1,28 @@
+
+  
+  .btn {
+    background: coral;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .page-info {
+    margin-left: 1rem;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  #video_box {position:relative;}
+	#overlay {position: absolute;z-index: 300000; top: 44px;left:55px}
+	#video_container {position:absolute;top: 0px;left: 0px;}
